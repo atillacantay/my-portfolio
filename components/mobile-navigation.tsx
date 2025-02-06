@@ -23,7 +23,6 @@ export const MobileNavigation = () => {
             className="fixed inset-0 bg-gray-900 bg-opacity-95 text-white flex flex-col items-center justify-center space-y-8 z-50"
             aria-label="Mobile menu"
           >
-            {/* Close Menu Button */}
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-6 right-6 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 z-50"
@@ -31,7 +30,7 @@ export const MobileNavigation = () => {
             >
               <FiX className="h-8 w-8 transition-transform duration-300 transform hover:rotate-90" />
             </button>
-            {/* Menu Links */}
+
             <NavLink
               href="/"
               className="text-2xl font-bold hover:text-purple-400 transition-colors duration-300"

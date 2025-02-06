@@ -24,18 +24,18 @@ export const metadata = generateMetadata({
 export default function ExperiencePage() {
   return (
     <div
-      className="mx-auto py-16 px-6 text-white min-h-screen"
+      className="mx-auto py-16 px-4 sm:px-6 md:px-8 text-white min-h-screen"
       aria-labelledby="experiences-title"
     >
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center animate-fade-in-down">
         <h1
           id="experiences-title"
-          className="text-5xl font-extrabold mb-6 animate-fade-in-down"
+          className="text-4xl sm:text-5xl font-extrabold mb-6"
         >
           <GradientText>Professional Experiences</GradientText>
         </h1>
         <p
-          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animate-delay-100"
+          className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           aria-describedby="timeline-description"
         >
           Over the years, I&apos;ve had the privilege of collaborating with
@@ -44,7 +44,7 @@ export default function ExperiencePage() {
         </p>
       </div>
 
-      <section aria-labelledby="timeline-heading" className="mb-12">
+      <section aria-labelledby="timeline-heading" className="pt-8 mb-12">
         <h2 id="timeline-heading" className="sr-only">
           Timeline of Experience
         </h2>
@@ -59,20 +59,20 @@ export default function ExperiencePage() {
               }`}
             >
               <TimelineSeparator>
-                <TimelineDot className="bg-gradient-to-br from-purple-500 via-pink-500 to-red-400 rounded-sm" />
+                <TimelineDot className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-400 rounded-sm" />
                 {index < experiences.length - 1 && (
                   <TimelineConnector className="bg-gray-600" />
                 )}
               </TimelineSeparator>
 
               <TimelineContent>
-                <TimelineTitle className="text-2xl font-semibold text-purple-300">
+                <TimelineTitle className="text-lg md:text-2xl font-semibold text-purple-300">
                   {experience.title}
                 </TimelineTitle>
-                <TimelineDescription className="text-sm text-gray-400 mt-1 italic">
+                <TimelineDescription className="text-sm sm:text-base text-gray-400 mt-1 italic">
                   {experience.date}
                 </TimelineDescription>
-                <TimelineDescription className="text-gray-200 mt-4 leading-loose">
+                <TimelineDescription className="text-gray-200 mt-4 leading-relaxed">
                   {experience.description}
                 </TimelineDescription>
               </TimelineContent>
@@ -81,8 +81,8 @@ export default function ExperiencePage() {
         </Timeline>
       </section>
 
-      <div className="text-center animate-fade-in-up animate-delay-300">
-        <p className="text-lg text-gray-300 mb-6 leading-relaxed max-w-5xl mx-auto">
+      <div className="text-center animate-fade-in-up">
+        <p className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed max-w-2xl sm:max-w-4xl md:max-w-5xl mx-auto">
           Interested in learning more? Discover the impact of my work by
           exploring the{" "}
           <Link
@@ -92,11 +92,11 @@ export default function ExperiencePage() {
             Projects
           </Link>{" "}
           page, where I showcase the skills and solutions that drive success.
-          Let’s build something incredible together!
+          Let&apos;s build something incredible together!
         </p>
         <Link
           href="/contact"
-          className="inline-block text-lg font-bold px-6 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-red-400 rounded-md shadow-lg text-white hover:from-purple-600 hover:via-pink-600 hover:to-red-500 transition duration-300"
+          className="inline-block text-base sm:text-lg font-bold px-6 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-red-400 rounded-md shadow-lg text-white hover:from-purple-600 hover:via-pink-600 hover:to-red-500 transition duration-300"
         >
           Contact Me
         </Link>

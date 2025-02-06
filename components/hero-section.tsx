@@ -4,14 +4,14 @@ import { GradientText } from "./gradient-text";
 
 export const HeroSection: React.FC = () => {
   return (
-    <div
+    <section
       className="max-w-3xl mx-auto text-center py-20 px-4 sm:px-6 lg:px-8 relative animate-fade-in-up"
       role="banner"
       aria-labelledby="hero-title"
       aria-describedby="hero-description"
     >
       <div className="absolute inset-0 -z-10">
-        <div className="bg-gradient-to-b from-purple-700 via-indigo-600 to-gray-900 opacity-30 w-full h-full rounded-lg blur-3xl"></div>
+        <div className="bg-gradient-to-b from-purple-700 via-indigo-600 to-gray-900 opacity-30 w-full h-full rounded-lg blur-3xl" />
       </div>
 
       <h1
@@ -31,11 +31,11 @@ export const HeroSection: React.FC = () => {
         </GradientText>
         , I specialize in empowering businesses to thrive in the digital
         landscape by crafting scalable applications, captivating user
-        experiences and robust systems. Let’s shape the future—together.
+        experiences and robust systems. Let&apos;s shape the future—together.
       </p>
 
       <div
-        className="flex justify-center space-x-8 mt-10 animate-fade-in-up"
+        className="flex justify-center space-x-6 sm:space-x-8 mt-10 animate-fade-in-up"
         aria-label="Social media links"
       >
         <Link
@@ -64,6 +64,6 @@ export const HeroSection: React.FC = () => {
           <FaEnvelope className="h-8 w-8 hover:scale-110 transform transition-transform duration-300" />
         </Link>
       </div>
-    </div>
+    </section>
   );
 };

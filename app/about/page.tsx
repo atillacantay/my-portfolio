@@ -1,6 +1,5 @@
 import { GradientText } from "@/components/gradient-text";
 import { Badge } from "@/components/ui/badge";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { technicalSkills, tools } from "@/lib/constants";
 import { generateMetadata } from "@/lib/metadata";
 
@@ -25,7 +24,7 @@ const BadgeList: React.FC<BadgeListProps> = ({ items, title }) => {
         {items.map((item, index) => (
           <Badge
             key={index}
-            className="px-4 py-2 bg-gray-700 text-gray-300 border border-gray-600 rounded-md hover:bg-gray-600 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+            className="px-4 py-2 bg-gray-700 text-gray-300 border border-gray-600 rounded-full hover:bg-gray-600 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800"
             tabIndex={0}
             role="listitem"
           >
@@ -47,20 +46,24 @@ export const metadata = generateMetadata({
 
 export default function AboutPage() {
   return (
-    <div className="pb-12 text-white min-h-screen">
+    <section
+      className="pb-12 text-white min-h-screen"
+      aria-labelledby="about-main-title"
+    >
       <div
-        className="max-w-5xl mx-auto py-12 px-6 text-center animate-fade-in-up"
+        className="max-w-5xl mx-auto py-12 px-4 sm:px-6 md:px-8 text-center animate-fade-in-down"
         aria-labelledby="about-title"
+        aria-describedby="introduction"
       >
         <h1
           id="about-title"
-          className="text-5xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-400"
+          className="text-4xl sm:text-5xl font-extrabold mb-8"
         >
           <GradientText>About Me</GradientText>
         </h1>
         <p
-          className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto"
-          aria-describedby="introduction"
+          id="introduction"
+          className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto"
         >
           Hello! I&apos;m <strong>Atilla Cantay Gül</strong>, a passionate
           Software Engineer with extensive experience in building intuitive,
@@ -70,7 +73,7 @@ export default function AboutPage() {
       </div>
 
       <div
-        className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12"
+        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12"
         aria-labelledby="main-title"
       >
         <section
@@ -83,7 +86,7 @@ export default function AboutPage() {
           >
             Who I Am
           </h2>
-          <ScrollArea>
+          <div>
             <p className="text-gray-300 leading-loose">
               I&apos;m a forward-thinking Software Engineer with 4+ years of
               professional experience in building intuitive, scalable and
@@ -101,7 +104,7 @@ export default function AboutPage() {
               cross-functional teams and continuously pushing the boundaries of
               software development.
             </p>
-          </ScrollArea>
+          </div>
         </section>
 
         <div className="lg:col-span-2 space-y-12 animate-fade-in-up">
@@ -111,7 +114,7 @@ export default function AboutPage() {
       </div>
 
       <section
-        className="mt-16 text-center px-6 animate-fade-in-down"
+        className="mt-16 text-center px-4 sm:px-6 md:px-8 animate-fade-in-up"
         aria-labelledby="core-beliefs"
       >
         <h2
@@ -120,7 +123,7 @@ export default function AboutPage() {
         >
           My Core Beliefs
         </h2>
-        <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
           <q className="font-bold italic">
             Great software goes beyond just functionality—it creates meaningful
             impact.
@@ -130,6 +133,6 @@ export default function AboutPage() {
           inspire.
         </p>
       </section>
-    </div>
+    </section>
   );
 }
