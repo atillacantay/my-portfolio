@@ -5,7 +5,7 @@ const rateLimitStore = new Map<
   string,
   { count: number; lastRequest: number }
 >();
-const MAX_REQUESTS = 3; // Maximum number of requests
+const MAX_REQUESTS = 2; // Maximum number of requests
 const TIME_WINDOW = 60 * 60 * 1000; // 1 hour in milliseconds
 
 const rateLimiter = (ip: string): boolean => {
