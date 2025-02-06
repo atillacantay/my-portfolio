@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { BASE_URL } from "@/lib/constants";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Gabarito } from "next/font/google";
 import "./globals.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${gabarito.variable} antialiased`}>
         <Analytics />
+        <SpeedInsights />
         <Header />
         <main className="bg-gradient-to-b from-gray-900 via-gray-800 to-black">
           {children}
