@@ -10,7 +10,7 @@ export const technicalSkills = [
   // Frontend Frameworks & Libraries
   "React",
   "Next.js",
-  "Vue",
+  "Vue.js",
   "Nuxt.js",
   "Redux",
   "Vite",
@@ -193,7 +193,7 @@ export const projectsByCompany: Record<
     {
       name: "Berlin Brands Group Webshops",
       descriptions: [
-        "Contributed to the development of a multi-tenant SaaS platform using Nuxt, Vue Storefront, Commercetools and Storyblok, launching in Germany and the UK with multi-language, multi-currency and customizable themes.",
+        "Contributed to the development of a multi-tenant SaaS platform using Nuxt, Vue.js Storefront, Commercetools and Storyblok, launching in Germany and the UK with multi-language, multi-currency and customizable themes.",
         "Built and maintained key features like the Product Detail Page (PDP), new CMS components.",
         "Customized Commercetools and Storyblok CMS, integrated third-party tools like CuratorIO, Dynamic Yield, Adyen and PayPal and optimized components from the Storefront UI Library.",
         "Improved performance, resolved memory leaks and ensured biweekly deployments while introducing new features and functionality.",

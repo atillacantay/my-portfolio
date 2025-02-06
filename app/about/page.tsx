@@ -40,7 +40,7 @@ const BadgeList: React.FC<BadgeListProps> = ({ items, title }) => {
 export const metadata = generateMetadata({
   title: "About Me",
   description:
-    "Discover Atilla Cantay Gül's expertise in Front-End & Full-Stack development with mastery of React, Vue, Next.js, Node.js and modern technologies.",
+    "Discover Atilla Cantay Gül's expertise in Front-End & Full-Stack development with mastery of React, Vue.js, Next.js, Node.js and modern technologies.",
   url: "/about",
   ogImageUrl: "/og-image.jpg",
 });
@@ -64,8 +64,8 @@ export default function AboutPage() {
         >
           Hello! I&apos;m <strong>Atilla Cantay Gül</strong>, a passionate
           Software Engineer with extensive experience in building intuitive,
-          scalable, and user-friendly digital solutions. Let me guide you
-          through my journey of developing extraordinary software.
+          scalable and user-friendly digital solutions. Let me guide you through
+          my journey of developing extraordinary software.
         </p>
       </div>
 
@@ -86,19 +86,19 @@ export default function AboutPage() {
           <ScrollArea>
             <p className="text-gray-300 leading-loose">
               I&apos;m a forward-thinking Software Engineer with 4+ years of
-              professional experience in building intuitive, scalable, and
+              professional experience in building intuitive, scalable and
               user-centric applications.
             </p>
             <p className="text-gray-300 mt-4 leading-loose">
               My technical expertise lies in working with advanced web
               technologies like <strong>JavaScript</strong>,{" "}
               <strong>TypeScript</strong>, <strong>React</strong>,{" "}
-              <strong>Vue.js</strong>, and developing server-side solutions
-              using <strong>Node.js</strong>.
+              <strong>Vue.js</strong> and developing server-side solutions using{" "}
+              <strong>Node.js</strong>.
             </p>
             <p className="text-gray-300 mt-4 leading-loose">
               Beyond coding, I enjoy learning new technologies, collaborating in
-              cross-functional teams, and continuously pushing the boundaries of
+              cross-functional teams and continuously pushing the boundaries of
               software development.
             </p>
           </ScrollArea>
@@ -126,7 +126,7 @@ export default function AboutPage() {
             impact.
           </q>{" "}
           I strive to craft solutions that enhance users&apos; lives, empower
-          businesses, and leverage cutting-edge technologies to innovate and
+          businesses and leverage cutting-edge technologies to innovate and
           inspire.
         </p>
       </section>

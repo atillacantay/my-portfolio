@@ -76,7 +76,7 @@ export const AboutSection: React.FC<AboutSectionProps> = () => {
         ,{" "}
         <GradientText>
           <strong>Vue.js</strong>
-        </GradientText>
+        </GradientText>{" "}
         and{" "}
         <GradientText>
           <strong>Node.js</strong>

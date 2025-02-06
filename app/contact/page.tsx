@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata = generateMetadata({
   title: "Contact Me",
   description:
-    "Get in touch with Atilla Cantay Gül, a skilled Software Engineer specializing in crafting user-centric solutions using React, Next.js, Vue, and more.",
+    "Get in touch with Atilla Cantay Gül, a skilled Software Engineer specializing in crafting user-centric solutions using React, Next.js, .js and more.",
   url: "/contact",
   ogImageUrl: "/og-image.jpg",
 });

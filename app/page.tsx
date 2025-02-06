@@ -5,7 +5,7 @@ import { generateMetadata } from "@/lib/metadata";
 export const metadata = generateMetadata({
   title: "Software Engineer Portfolio",
   description:
-    "Explore the portfolio of Atilla Cantay Gül, a skilled Software Engineer with expertise in Front-End and Full-Stack development using React, Next.js, Vue, and more.",
+    "Explore the portfolio of Atilla Cantay Gül, a skilled Software Engineer with expertise in Front-End and Full-Stack development using React, Next.js, Vue.js and more.",
   url: "/",
   ogImageUrl: "/og-image.jpg",
 });
