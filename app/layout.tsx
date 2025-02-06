@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gabarito.variable} antialiased`}>
-        <Analytics />
-        <SpeedInsights />
         <Header />
         <main className="bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+          <Analytics />
+          <SpeedInsights />
           {children}
         </main>
       </body>
