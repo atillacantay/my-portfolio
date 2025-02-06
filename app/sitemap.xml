@@ -1,26 +1,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://atilla-dev.vercel.app/</loc>
+    <loc>https://atillacantay.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://atilla-dev.vercel.app/about</loc>
+    <loc>https://atillacantay.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://atilla-dev.vercel.app/experiences</loc>
+    <loc>https://atillacantay.com/experiences</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://atilla-dev.vercel.app/projects</loc>
+    <loc>https://atillacantay.com/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://atilla-dev.vercel.app/contact</loc>
+    <loc>https://atillacantay.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

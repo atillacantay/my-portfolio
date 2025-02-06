@@ -1,4 +1,4 @@
-export const BASE_URL = "https://atilla-dev.vercel.app";
+export const BASE_URL = "https://atillacantay.com";
 
 export const technicalSkills = [
   // Programming Languages
