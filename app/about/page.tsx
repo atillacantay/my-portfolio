@@ -1,6 +1,6 @@
 import { GradientText } from "@/components/gradient-text";
 import { Badge } from "@/components/ui/badge";
-import { technicalSkills, tools } from "@/lib/constants";
+import { softSkills, technicalSkills, tools } from "@/lib/constants";
 import { generateMetadata } from "@/lib/metadata";
 
 interface BadgeListProps {
@@ -20,7 +20,7 @@ const BadgeList: React.FC<BadgeListProps> = ({ items, title }) => {
       >
         {title}
       </h2>
-      <div className="flex flex-wrap gap-4" role="list">
+      <div className="flex flex-wrap gap-2" role="list">
         {items.map((item, index) => (
           <Badge
             key={index}
@@ -73,11 +73,11 @@ export default function AboutPage() {
       </div>
 
       <div
-        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12"
+        className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12"
         aria-labelledby="main-title"
       >
-        <section
-          className="lg:col-span-1 bg-gray-800 rounded-lg p-8 shadow-lg animate-slide-in-left"
+        <aside
+          className="lg:col-span-1 max-h-fit md:sticky md:top-20 md:left-0 bg-gray-800 rounded-lg p-8 shadow-lg animate-slide-in-left"
           aria-labelledby="who-i-am"
         >
           <h2
@@ -105,16 +105,16 @@ export default function AboutPage() {
               software development.
             </p>
           </div>
-        </section>
+        </aside>
 
-        <div className="lg:col-span-2 space-y-12 animate-fade-in-up">
+        <div className="lg:col-span-2 space-y-12 animate-fade-in-up top-24">
           <BadgeList items={technicalSkills} title="Technical Skills" />
           <BadgeList items={tools} title="Tools & Technologies" />
+          <BadgeList items={softSkills} title="Soft Skills" />
         </div>
       </div>
-
       <section
-        className="mt-16 text-center px-4 sm:px-6 md:px-8 animate-fade-in-up"
+        className="mt-12 text-center px-4 sm:px-6 md:px-8 animate-fade-in-up"
         aria-labelledby="core-beliefs"
       >
         <h2

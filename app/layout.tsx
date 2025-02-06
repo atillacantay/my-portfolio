@@ -1,3 +1,4 @@
+import { CompactNavigationLinks } from "@/components/compact-mobile-navigation";
 import { Header } from "@/components/header";
 import { BASE_URL } from "@/lib/constants";
 import { Analytics } from "@vercel/analytics/next";
@@ -30,7 +31,8 @@ export default function RootLayout({
         <main className="bg-gradient-to-b from-gray-900 via-gray-800 to-black">
           <Analytics />
           <SpeedInsights />
-          {children}
+          <div className="max-md:pb-16">{children}</div>
+          <CompactNavigationLinks />
         </main>
       </body>
     </html>

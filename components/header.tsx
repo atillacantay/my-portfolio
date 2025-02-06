@@ -1,5 +1,4 @@
 import { Logo } from "./logo";
-import { MobileNavigation } from "./mobile-navigation";
 import { Navigation } from "./navigation";
 
 export const Header = () => {
@@ -9,7 +8,6 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <Logo />
           <Navigation />
-          <MobileNavigation />
         </div>
       </nav>
     </header>

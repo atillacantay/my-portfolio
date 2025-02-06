@@ -44,6 +44,16 @@ export const technicalSkills = [
   "SEO Optimization",
 ];
 
+export const softSkills = [
+  "Adaptability",
+  "Scrum Development",
+  "Decision Making Techniques",
+  "Software Quality Assurance",
+  "Self improvement",
+  "Cross-functional Team",
+  "Teamwork and Collaboration",
+];
+
 export const tools = [
   "GitHub",
   "GitLab",
