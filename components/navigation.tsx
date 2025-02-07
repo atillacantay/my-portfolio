@@ -10,6 +10,7 @@ export const Navigation = () => {
       <NavLink href="/about">About</NavLink>
       <NavLink href="/experiences">Experiences</NavLink>
       <NavLink href="/projects">Projects</NavLink>
+      <NavLink href="/resume">Resume</NavLink>
       <NavLink href="/contact">Contact</NavLink>
     </div>
   );

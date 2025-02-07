@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HiBriefcase, HiFolder, HiHome, HiMail, HiUser } from "react-icons/hi";
+import { TbFileCv } from "react-icons/tb";
 
 export const CompactNavigationLinks: React.FC = () => {
   const links = [
@@ -7,6 +8,7 @@ export const CompactNavigationLinks: React.FC = () => {
     { href: "/about", label: "About", icon: HiUser },
     { href: "/experiences", label: "Experiences", icon: HiBriefcase },
     { href: "/projects", label: "Projects", icon: HiFolder },
+    { href: "/resume", label: "Resume", icon: TbFileCv },
     { href: "/contact", label: "Contact", icon: HiMail },
   ];
 
@@ -18,9 +20,9 @@ export const CompactNavigationLinks: React.FC = () => {
             <li key={link.href} className="text-center">
               <Link
                 href={link.href}
-                className="flex flex-col items-center px-2 py-3 text-sm font-medium text-white hover:bg-white/20 rounded-md transition-colors duration-300"
+                className="flex flex-col items-center px-1 py-2 text-xs font-medium text-white hover:bg-white/20 rounded-md transition-colors duration-300"
               >
-                <link.icon className="h-6 w-6 mb-1" />
+                <link.icon className="h-5 w-5 mb-1" />
                 {link.label}
               </Link>
             </li>
