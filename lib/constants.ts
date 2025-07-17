@@ -104,6 +104,30 @@ export const projectsByCompany: Record<
 > = {
   "EPAM Systems": [
     {
+      name: "Diageo plc",
+      descriptions: [
+        "Developed educational platform using Next.js, React and TypeScript with SSR, achieving 95+ Lighthouse scores across 11,000+ pages.",
+        "Collaborated across 5 teams with 70+ contributors on large-scale platform supporting multiple Diageo brands.",
+        "Built advanced search with Algolia integration featuring autocomplete, filtering, sorting and pagination.",
+        "Implemented three user registration flows and secure authentication with persistent login.",
+        "Created 20+ reusable UI components with dynamic content delivery via Contentful CMS.",
+        "Designed responsive interfaces using TailwindCSS with comprehensive accessibility compliance.",
+        "Optimized performance through code splitting, lazy loading and CSP headers on Vercel.",
+        "Developed internationalization framework supporting 6 locales with 100% TypeScript coverage.",
+        "Mentored junior developers and conducted code reviews, receiving 12 positive feedbacks.",
+      ],
+      technologies: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Server-Side Rendering (SSR)",
+        "Contentful",
+        "Tailwind CSS",
+        "Algolia",
+      ],
+    },
+    {
       name: "Goody Kitchen Website Proof of Concept (PoC)",
       descriptions: [
         "Rebuilt and optimized application architecture using Next.js to enhance performance and scalability.",
